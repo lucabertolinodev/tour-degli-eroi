@@ -1,0 +1,9 @@
+<div *ngIf="eroeDaVisualizzare">
+    <h2>Dettagli di {{eroeDaVisualizzare.nome | uppercase}}:</h2>
+    <div><span>id: </span>{{eroeDaVisualizzare.id}}</div>
+    <br>
+    <div><span>Nome: </span>{{eroeDaVisualizzare.nome}}</div>
+    <label for="nome">
+    <input type="text" id="nome" [(ngModel)]="eroeDaVisualizzare.nome">
+    </label>
+</div>

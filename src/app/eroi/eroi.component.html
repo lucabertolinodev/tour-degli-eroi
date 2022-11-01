@@ -1,0 +1,8 @@
+<h2>I Miei Eroi</h2>
+
+<ul class="heroes">
+    <li *ngFor="let eroe of eroi" [class.selected]="eroe === eroeSelezionato" (click)="onSelect(eroe)">
+        <span class="badge">{{eroe.id}}</span> {{eroe.nome}}
+    </li>
+</ul>
+<app-dettagli-eroe [eroeDaVisualizzare]="eroeSelezionato"></app-dettagli-eroe>
