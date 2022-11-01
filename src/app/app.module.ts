@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EroiComponent } from './eroi/eroi.component';
 import { DettagliEroeComponent } from './dettagli-eroe/dettagli-eroe.component';
+import { NotificheComponent } from './notifiche/notifiche.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     EroiComponent,
-    DettagliEroeComponent
+    DettagliEroeComponent,
+    NotificheComponent
   ],
   imports: [
     BrowserModule,
