@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EroiComponent } from './eroi/eroi.component';
 import { DettagliEroeComponent } from './dettagli-eroe/dettagli-eroe.component';
 import { NotificheComponent } from './notifiche/notifiche.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NotificheComponent } from './notifiche/notifiche.component';
     AppComponent,
     EroiComponent,
     DettagliEroeComponent,
-    NotificheComponent
+    NotificheComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -24,6 +24,11 @@
     left: .1em;
 }
 
+.heroes a {
+    color: black;
+    text-decoration: none;
+}
+
 .heroes li.selected {
     background-color: #CFD8DC;
     color: white;

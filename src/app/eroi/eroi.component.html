@@ -2,7 +2,8 @@
 
 <ul class="heroes">
     <li *ngFor="let eroe of eroi" [class.selected]="eroe === eroeSelezionato" (click)="onSelect(eroe)">
-        <span class="badge">{{eroe.id}}</span> {{eroe.nome}}
+        <a routerLink="/dettagli/{{eroe.id}}">
+            <span class="badge">{{eroe.id}}</span> {{eroe.nome}}
+        </a>
     </li>
 </ul>
-<app-dettagli-eroe [eroeDaVisualizzare]="eroeSelezionato"></app-dettagli-eroe>

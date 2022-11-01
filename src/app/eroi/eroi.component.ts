@@ -3,6 +3,7 @@ import {Eroe} from '../eroe';
 import { fintiEroi } from '../finti-eroi';
 import { EroeService } from '../eroe.service';
 import { Subscription } from 'rxjs';
+import { NotificheService } from '../notifiche.service';
 
 @Component({
   selector: 'app-eroi',
@@ -18,9 +19,13 @@ export class EroiComponent implements OnInit {
 
   onSelect(eroe:Eroe):void {
     this.eroeSelezionato = eroe;
+    this.notifiche.aggiungiNotifica(`Aggiunto Eroe ID:${eroe.id}`);
   }
 
-  constructor(private eroeService:EroeService) { }
+  constructor(
+    private eroeService:EroeService, 
+    private notifiche:NotificheService
+    ) { }
 
   ngOnInit(): void {
     this.subscription = this.eroeService.getEroi().subscribe(
