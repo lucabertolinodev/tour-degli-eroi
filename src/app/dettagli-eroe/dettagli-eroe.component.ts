@@ -12,7 +12,8 @@ export class DettagliEroeComponent implements OnInit {
 
   eroeDaVisualizzare!: Eroe;
 
-  constructor(private servizioEroi: EroeService,
+  constructor(
+    private servizioEroi: EroeService,
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {

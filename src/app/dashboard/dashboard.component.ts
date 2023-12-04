@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.eroiServizio.getEroi().subscribe(
-      eroi => this.miglioriEroi =eroi.slice(0,3)
+      eroi => this.miglioriEroi =eroi.slice(1,4)
     )
   }
 
